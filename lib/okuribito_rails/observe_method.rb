@@ -15,7 +15,7 @@ module OkuribitoRails
                                  class_name: class_name,
                                  method_symbol: method_symbol,
                                  method_name: method_name,
-                                 back_trace: caller_info[0])
+                                 back_trace: caller_info.nil? ? nil : caller_info[0])
           end
         end
       end
